@@ -1,0 +1,62 @@
+<form #registration="ngForm" (ngSubmit)="submit(registration)">
+  
+  <div class="form-control" >
+<div class="h-150 bg green">
+  <div class="row justify-content-center align-items-center h-100">
+<div style="width:500px;"><br><br><br>
+  <h1>User Registration </h1>
+    <div class="mb-10">
+    <label for="name1" class="form-label">Name:</label>
+    <input type="text" size="5" class="form-control" id="name1"  name="name1" placeholder="enter your name"
+    #name1="ngModel" ngModel required> </div>
+    <div *ngIf="name1.touched && name1.invalid"> 
+      <span *ngIf="name1.touched && name1.invalid" style="color:red">please enter your name</span>
+  </div>
+  <br>
+
+  <div class="mb-10">
+    <label for="bgroup" class="form-label">Blood Group:</label>
+    <input type="text" size="5" class="form-control" id="bgroup"name="bgroup" placeholder="enter your Blood Group"minlength="2"maxlength="3"
+    #bgroup="ngModel" ngModel required>
+  </div>
+  <div *ngIf="bgroup.touched && bgroup.invalid">
+    <span *ngIf="bgroup.touched && bgroup.invalid" style="color:red">Please enter a correct blood group</span>
+</div>
+
+  <div class="mb-10">
+    <label for="email" class="form-label">Email-id:</label>
+    <input type="gmail" size="5" class="form-control" id="email"name="email"  name="email" placeholder="enter your Email-id"
+    #email="ngModel" ngModel required>
+  </div>
+  <div *ngIf="email.touched && email.invalid">
+    <span *ngIf="email.touched && email.invalid" style="color:red">please enter a valid email</span>
+</div>
+  <br>
+
+<label for="password" class="form-label">Password</label>
+<input type="password" size="5" class="form-control" id="password"  name="password" placeholder="enter your password"  #password="ngModel" ngModel required>
+</div>
+<div *ngIf="password.touched && password.invalid">
+  <span *ngIf="password.touched && password.invalid" style="color:red">please create a valid password</span>
+</div>
+
+<br><br>
+<div class="mb-10 form-group"style="margin:20px;">
+  <input type="submit" [disabled]="registration.invalid"  class="btn btn-success btn-lg ms-2" value="submit">
+  <button type="reset" class="btn btn-danger btn-lg"   >Reset all</button>
+  <p class="text">Already have an account <a href="#" routerLink="/login">Login</a></p>
+</div>
+</div>
+</div>
+
+
+</div>
+
+
+</form> 
+   
+    
+
+
+
+

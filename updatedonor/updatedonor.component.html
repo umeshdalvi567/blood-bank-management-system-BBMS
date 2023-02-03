@@ -1,0 +1,21 @@
+<div style=   "    border: 5px solid red; width:50%; padding:80px; margin:80px; text-align: center; background-color: darkgray;">
+    
+    <h1>********update Donors Record********</h1>
+    <form #update1="ngForm" (ngSubmit)="submit(update1)">
+    <div style="font-size: 15px;">
+        <input type="text" name="id" id="id" placeholder="id" ngModel="id"><br>
+        <input type="text" name="name" id="name" ngModel="name"><br>
+        <input type="text" name="gender" id="gender" ngModel="gender"><br>
+        <input type="text" name="mobileno" id="mobileno" ngModel="mobileno"><br>
+        <input type="text" name="bgroup" id="bgroup" ngModel="bgroup"><br>
+        <input type="text" name="location" id="location" ngModel="location"><br>
+        <input type="text" name="dob" id="dob" ngModel="dob"><br>
+        <input type="text" name="email" id="email" ngModel="email"><br><br><br>
+        <input class="btn btn-success btn-lg" type="submit" value="submit" ><br><br>
+        <input class="btn btn-link btn-lg" type="submit" value="<==BACK" routerLink="/navbar1">
+</div>
+    </form>
+    
+    </div>
+
+  

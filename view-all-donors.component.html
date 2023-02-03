@@ -1,0 +1,33 @@
+<div>
+<div style="padding:100px; margin:auto; text-align: center;">
+    <h1 >Donors/View record</h1>
+    <table style=  "border: 5px solid red; font-size: 16px;" width="200px"  class="table table-hover table-success">
+        <thead>
+            <tr width="60%">
+                <th> Id</th>
+                <th>name</th>
+                <th> Gender</th>
+                <th>Mobile No</th>
+                <th> Blood Group</th>
+                <th>  Location</th>
+                <th> Date of Birth</th>
+                <th> Email-Id</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let donor of donors">
+                <td>{{donor.id}}</td>
+                <td>{{donor.name}}</td>
+                <td>{{donor.gender}}</td>
+                <td>{{donor.mobileno}}</td>
+                <td>{{donor.bgroup}}</td>
+                <td>{{donor.location}}</td>
+                <td>{{donor.dob}}</td>
+                <td>{{donor.email}}</td>
+        </tbody>
+           </table>
+           <input class="btn btn-link btn-lg" type="submit" value="<==BACK" routerLink="/navbar1">
+           </div>
+           </div>
+           

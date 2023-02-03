@@ -1,0 +1,24 @@
+<div style="text-align: center;">
+<div style=   "    border: 5px solid red; width:40%; padding:100px; margin:100px; text-align: center; background-color: darkgray;">
+    
+    <div>
+        <h1>********Search Donors Record ******</h1><br><br>
+    <form #search="ngForm" (ngSubmit)="searchId(search)">
+        <textarea type="text" name="id" id="id" ngModel="id" rows="2" style="text-align:center;font-size: medium;"></textarea>
+        <p> {{donors.id}}</p>
+        <p> {{donors.name}}</p>
+        <p> {{donors.gender}}</p>
+        <p> {{donors.mobileno}}</p>
+        <p> {{donors.bgroup}}</p>
+        <p> {{donors.location}}</p>
+        <p> {{donors.dob}}</p>
+        <p> {{donors.email}}</p>
+       
+
+        <input class="btn btn-success btn-lg" type="submit" value="submit">
+    </form>
+   </div>
+   <input class="btn btn-link btn-lg" type="submit" value="<==BACK" routerLink="/navbar1">
+    </div>
+   
+    </div>
