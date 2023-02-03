@@ -1,0 +1,22 @@
+.my_lg_14_my_8{
+    border:2px solid rgb(241, 9, 9);
+    text-align:center;
+    width:50%;
+    padding: 20px;
+    margin: auto;
+  
+  
+background-color:  rgb(190, 190, 49);
+
+}
+
+.form_control {
+    font-size: 1.0em;
+    margin-top: 0.8em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.625)
+}
+
+.text a {
+    color: rgba(255, 255, 255, 0.911)
+}

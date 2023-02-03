@@ -1,0 +1,18 @@
+.form-control{
+    border:2px solid red;
+    text-align:center;
+    width:50%;
+    margin: auto;
+background-color: yellowgreen;
+}
+
+.text {
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.625)
+}
+
+.text a {
+    color: rgba(255, 255, 255, 0.911)
+}

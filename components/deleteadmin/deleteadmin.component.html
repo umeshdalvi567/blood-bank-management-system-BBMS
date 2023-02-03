@@ -1,0 +1,12 @@
+<div style=   "    border: 5px solid red; width:40%; padding:100px; margin:100px; text-align: center; background-color: darkgray;">
+ 
+    <h1>********Delete Donors Record******</h1><br><br>
+    <form #del="ngForm" (ngSubmit)="deleteDonor(del)">
+        <textarea type="text" name="id" id="id" ngModel="id"  rows="2" style="text-align:center;font-size: medium;" ></textarea><br><br><br>
+       
+        <input class="btn btn-success btn-lg" type="submit" value="submit" >
+        <br><br>
+        <input class="btn btn-link btn-lg" type="submit" value="<==BACK" routerLink="/navbar2">
+    </form>
+  
+    </div>

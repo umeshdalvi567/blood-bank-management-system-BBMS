@@ -1,0 +1,77 @@
+<form #addDonor="ngForm" (ngSubmit)="submit(addDonor)">
+  
+    <div class="form-control" >
+  <div class="h-150 bg green">
+    <div class="row justify-content-center align-items-center h-100">
+  <div style="width:500px;"><br><br><br>
+    <h1>Add New Donor</h1>
+      <div class="mb-10">
+      <label for="name" class="form-label">Full name:</label>
+      <input type="text" size="5" class="form-control" id="name"  name="name" placeholder="enter your name"
+      #name="ngModel" ngModel required>
+      
+    </div>
+  
+  
+    <br>
+  
+    <div class="mb-10">
+      <label for="gender" class="form-label">Gender:</label>
+      <input type="text" size="5" class="form-control" id="gender" name="gender" placeholder="enter your Gender"minlength="10"maxlength="20"
+      #gender="ngModel" ngModel required>
+    </div>
+  <br>
+    <div class="mb-3">
+      <label for="dob" class="form-label">Date of Birth:</label>
+      <input type="date" size="5" class="form-control" id="dob" placeholder="dd/mm/yy" name="dob" #dob="ngModel" ngModel required >
+    </div>
+    <br>
+    <div class="mb-10">
+      <label for="bgroup" class="form-label">Blood Group:</label>
+      <input type="text" size="5" class="form-control" id="bgroup"name="bgroup" placeholder="enter your Blood Group"minlength="10"maxlength="20"
+      #bgroup="ngModel" ngModel required>
+    </div>
+  
+    
+  
+    <div class="mb-10">
+      <label for="email" class="form-label">Email-id:</label>
+      <input type="text" size="5" class="form-control" id="email"name="email"  name="email" placeholder="enter your Email-id"minlength="10"maxlength="20"
+      #email="ngModel" ngModel required>
+    </div>
+  
+   
+    <br>
+    <div>
+    <label for="address" class="form-label"> location:</label>
+    <input type="text" size="5" class="form-control"rows="3" id="location"  name="location" placeholder="enter your home address"  #location="ngModel" ngModel required>
+  </div>
+  <br>
+ 
+  
+  
+  <label for="mobileno" class="form-label">Mobile No</label>
+  <input type="number" size="5" class="form-control" id="mobileno" maxlength="10" name="mobileno" placeholder="enter your mobile"  #mobileno="ngModel" ngModel required>
+  </div>
+  
+  <br><br>
+  <div class="mb-10"style="margin:20px;">
+    <input type="submit" class="btn btn-success btn-lg ms-2"  value="submit"><br><br>
+    <input class="btn btn-link btn-lg" type="submit" value="<==BACK" routerLink="/navbar1">
+  
+  </div>
+  </div>
+  </div>
+  
+  
+  </div>
+  
+  
+  </form> 
+     
+      
+  
+  
+  
+  
+  

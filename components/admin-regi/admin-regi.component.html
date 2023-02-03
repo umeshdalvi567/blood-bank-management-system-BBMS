@@ -1,0 +1,43 @@
+<form #adminreg="ngForm" (ngSubmit)="submit(adminreg)">
+  
+    <div class="form-control" >
+  <div class="h-150 bg green">
+    <div class="row justify-content-center align-items-center h-100">
+  <div style="width:500px;"><br><br><br>
+    <h1>Admin Registration</h1>
+      <div class="mb-10">
+      <label for="name2" class="form-label">Full name:</label>
+      <input type="text" size="5" class="form-control" id="name2"  name="name2" placeholder="enter your name"
+      #name2="ngModel" ngModel required> </div>
+      <div *ngIf="name2.touched && name2.invalid"> 
+        <span *ngIf="name2.touched && name2.invalid" style="color:red">please enter your valid name</span>
+    </div>
+    <br>
+  
+   
+  
+    <div class="mb-10">
+      <label for="email" class="form-label">Email-id:</label>
+      <input type="gmail" class="form-control" id="email"name="email"  placeholder="enter your Email-id"
+      #email="ngModel" ngModel required>
+    </div>
+    <div *ngIf="email.touched && email.invalid">
+      <span *ngIf="email.touched && email.invalid" style="color:red">please enter a valid email</span>
+  </div>
+    <br>
+  
+  <label for="password" class="form-label">Password</label>
+  <input type="password" size="5" class="form-control" id="password"  name="password" placeholder="enter your password"  #password="ngModel" ngModel required>
+  </div>
+  <div *ngIf="password.touched && password.invalid">
+    <span *ngIf="password.touched && password.invalid" style="color:red">please create a valid password</span>
+  </div>
+  
+  <br><br>
+  <div class="mb-10 form-group"style="margin:20px;">
+    <input type="submit" [disabled]="adminreg.invalid"  class="btn btn-success btn-lg ms-2" value="submit">
+    <button type="reset" class="btn btn-danger btn-lg"   >Reset all</button>
+    <p class="text">Already have an account <a href="#" routerLink="/admin-login">Login</a></p>
+  </div>
+  </div>
+  </div>
